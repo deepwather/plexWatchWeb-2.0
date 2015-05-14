@@ -14,23 +14,23 @@ A new web front-end for plexWatch.
 
 ###NEW Features
 -----------
-* A beatiful Login-Page is now included ->> defauld passwort is: <b>plexwatch</b> (All php-Files are protectet!)
-  * There is as well new a logout butten integradet in the main-menu.
-  * You can change the default PW by editing the "login.php" file.
+* A beatiful Login-Page is now included. The defauld passwort is: <b>plexwatch</b> (All php-Files are protectet!)
+  * There is as well new a logout butten integradet in the main-menu
+  * You can change the default PW by editing the "login.php" file
 
-* A very exciting new function, is the "System Info" Tab. With it you have now the opportunity to monitor your server.
+* A very exciting new function, is the "System Info" tab. With it you have now the opportunity to monitor your server
  * <em>You can monitor the server in the following ways:</em>
- * General info's like -> OS-type, uptime, Server-Time & Hostname
- * Internet Speed (Up/Down) & Bandwich
- * Load average CPU & numbers of prozessor cores and Ram consumption
- * Network Statistics // numper of connections & IP Adresses.
- * Disk Usage (All partitions) Size / Used / Avail. & Mountpoint
- * Display's all users on the system & the userhome path
- * Display all running processes and details like: ->> "User, PID, CPU-Load, Used-Mem, VSZ, RSS, TTY & STAT"
- * Aditionally you can activate ->> last login, who is online, Swap usage & installed Software (may not working)
+ * General info like: os-type, uptime, server-time & hostname
+ * Internet speed (Up/Down) & available bandwich
+ * Load average CPU & numbers of prozessor cores and ram consumption
+ * Network statistics, number of connections & IP-adresses
+ * Disk usage (all partitions) size, used, avail. & the mountpoint
+ * Displays all users on the system & their userhome path
+ * Displays all running processes and details like: ->> "user, PID, CPU-load, used-mem, VSZ, RSS, TTY & STAT"
+ * Aditionally you can activate ->> last login, who is online, swap usage & installed software (may not working)
  
 
-* A SQL-Editor is as well new found in the top-Menu. With it you can easily delete incorrect informations.
+* A SQL-editor is as well new found in the top-Menu. With it you can easily delete incorrect DB informations.
  
 
 ###Regular Features
