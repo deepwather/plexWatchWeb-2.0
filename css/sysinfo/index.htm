@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>404 Not Found</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Content-Language" content="en" />
+<style type="text/css">
+<!--
+body{background: #10375D;font: normal 12pt courier;color: #fff;margin: 100px;}
+p{margin: 30px 100px;text-align: left;}
+a, a:hover{color: inherit;font: inherit;}
+.menu{text-align: center;margin-top: 50px;}
+-->
+</style>
+<script language="Javascript">
+var phrases = new Array(
+	"Oh what the hell?! Man, you've got to be kidding me.",
+	"Look what you've done to UR!",
+	"The requested document is no where to be found. You've crashed me, you clown!",
+	"There is no content here.",
+	"What is wrong with you?",
+	"Now I'm depressed. You see, I'm just a web server...",
+	"-- here I am, brain the size of the universe, almighty and powerful...",
+	"Then you come along looking for a simple web page,",
+	"And then it doesn't even exist, and you crash me! Where does that leave me?!",
+	"Man, I'm so depressed I could just cry. And then where would we be, I ask you?",
+	"It's not pretty when a web server cries.",
+	"I'm so depressed... I think I'll crawl off into the trash can and decompose.",
+	"I mean, I'm gonna be obsolete in what, two weeks anyway?",
+	"What kind of a life is that?",
+	"Two freaking weeks, and then I'll be replaced by a .01 release...",
+	"That thinks it's God's gift to web servers...",
+	"Just because it doesn't have some tiddly little problem,",
+	"With serving jerks like you.",
+	"Why request a page that doesn't even exist?",
+	"Please just go away.",
+	"I can't deal with you any longer.",
+	"I get more depressed the longer you stay here.",
+	"I can't believe how cruel you are, going and crashing me like that.",
+	"*cries*",
+	"...",
+	"...",
+	"Why are you still here?",
+	"...",
+	"...",
+	"Fine, stay if you want, but I'm not talking to you anymore.",
+	"...",
+	"Bye."
+);
+
+var speed = 60;
+var index = 0;
+var text_pos = 0;
+var str_length = phrases[0].length;
+var contents, row;
+
+function type_text()
+{
+	contents = '';
+	row = Math.max(0, index-7);
+
+	while(row<index)
+	{
+		contents += phrases[row++] + '\r\n';
+	}
+
+	document.getElementById('server').value = contents + phrases[index].substring(0, text_pos) + "_";
+
+	if (text_pos++ == str_length)
+	{
+		text_pos = 0;
+		index++;
+
+		if (index != phrases.length)
+		{
+			str_length = phrases[index].length;
+			setTimeout("type_text()", 1500);
+		}
+	}
+	else
+	{
+		setTimeout("type_text()", speed);
+	}
+}
+
+window.onload = type_text;
+</script>
+</head>
+
+<body>
+
+<font face="Verdana, Arial, Helvetica, sans-serif" size="+3">404 Not Found</font><br />
+
+<p>
+	Oh no a God damn 404 error has been detected and the PlexWatch v2.0 script has been shut down to prevent damage<br /><br />
+
+	This may be due to a simple server issue which we have little if any control but either way try to F5 or refresh your page. Failing that follow the link below back to the home page :)
+</p>
+
+<p>
+	If problems continue, send us an <a href="#">email</a> to notify us, save any open work you may have and restart your computer, then try again later.
+
+</p>
+
+<p>
+	Technical information:<br /><br />
+
+	*** STOP: 0x00000050 (0xFD3094C2, 0x00000001, 0xFBFE7617, 0x00000000)<br /><br />
+	***  root/ - 404, DateStamp 4e6b8559</p>
+
+<p>
+	<textarea id="server" rows="8" cols="80" style="overflow: auto; border: 0; background: #10375D; color: #fff;" wrap="soft"></textarea>
+
+</p>
+
+
+<div class="menu">
+	<a href="../../index.php">Back to PlexWatch</a> | <a href="https://github.com/deepwather/plexWatchWeb-2.0" target="_blank">GitHub</a>
+</div>
+
+</body>
+</html>
+
