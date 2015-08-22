@@ -96,7 +96,7 @@ A new web front-end for plexWatch.
 
 ###Requirements
 ---------------
-* Plex Media Server (v0.9.9+) and a PlexPass membership
+* Plex Media Server (v0.9.10+) and a PlexPass membership
 * plexWatch (v0.3.2+)
 * a web server that supports php (apache, nginx, XAMPP, WampServer, EasyPHP, lighttpd, etc)
 * php5
@@ -105,15 +105,27 @@ A new web front-end for plexWatch.
 * php5-json
 
 
-### Install 
+### Install PlexWatch 2.0 on Ubuntu
 -----------
 
-1. Install requirements
-2. Download and unzip the plexWatchWeb package.
-3. Upload the contents to the desired location on your web server "/var/www/plexWatch"
+1. Read Install requirements
+2. <b>Install the following packages:</b>
+* apt-get install libwww-perl libxml-simple-perl libtime-duration-perl libtime-modules-perl libdbd-sqlite3-perl perl-doc libjson-perl
+* apt-get install php5 php5-sqlite php5-curl php5-json
+* apt-get install libfile-readbackwards-perl     (For IP Logging)
+3. Download and unzip the plexWatchWeb 2.0 package.
+4. Upload the contents to the desired location on your web server "/var/www/html/plexwatch"
+5. Check the permission! On Ubuntu the Owner of the web-files must be "www-data". (chown www-data:www-data FOLDER)
+
+<b>Check if you already installed PlexWatch.pl, without it it wot work!</b>
+For Install execute the following!
+1. wget -P /opt/plexWatch/ https://raw.github.com/ljunkie/plexWatch/master/plexWatch.pl
+2. wget -P /opt/plexWatch/ https://raw.github.com/ljunkie/plexWatch/master/config.pl-dist
+3. sudo chmod 777 /opt/plexWatch && sudo chmod 755 /opt/plexWatch/plexWatch.pl
+4. cp /opt/plexWatch/config.pl-dist /opt/plexWatch/config.pl
 
 
 ###Use
 ------
 
-Navigate to: http://ip-of-web-server/plexWatch
+Navigate to: http://ip-of-web-server/plexwatch
