@@ -14,7 +14,7 @@ A new web front-end for plexWatch.
 
 ###NEW Features
 -----------
-* A beatiful Login-Page is now included. The defauld passwort is: <b>plexwatch</b> (All php-Files are protectet!)
+* A beautiful Login-Page is now included. The defauld passwort is: <b>plexwatch</b> (All php-Files are protectet!)
   * There is as well new a logout butten integradet in the main-menu
   * You can change the default PW by editing the "login.php" file
 
