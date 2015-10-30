@@ -1,0 +1,30 @@
+{
+  "name": "linux-dash",
+  "version": "1.2.0",
+  "description": "A simple, low overhead web dashboard for linux.",
+  "main": "datafactory/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plexWatch.git"
+  },
+  "keywords": [
+    "linux",
+    "gnu",
+    "dashboard",
+    "monitor",
+    "server"
+  ],
+  "author": "Afaq Tariq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plexWatch/issues"
+  },
+  "homepage": "https://github.com/plexWatch",
+  "dependencies": {
+    "express": "^4.11.1",
+    "websocket": "^1.0.22"
+  }
+}

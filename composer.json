@@ -1,0 +1,22 @@
+{
+    "name": "plexWatch",
+    "description": "",
+    "license": "MIT",
+    "version": "2.3.0",
+    "keywords": ["linux", "dashboard", "plexwatch", "server dashboard"],
+    "authors": [
+        {
+            "name": "Deepwather",
+            "email": ""
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+    	"php": ">=5.4.0"
+    },
+     "support": {
+        "issues": "https://github.com/plexWatch/issues?state=open",
+        "forum": "https://gitter.im/plexWatch",
+        "source": "https://github.com/plexWatch"
+    }
+}

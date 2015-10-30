@@ -1,4 +1,4 @@
-# plexWatchWeb-2.0
+# plexWatchWeb-2.1
 This is my development of the original plexWatchWeb from "https://github.com/ecleese/plexWatchWeb".
 
 A new web front-end for plexWatch.

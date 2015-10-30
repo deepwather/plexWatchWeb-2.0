@@ -1225,7 +1225,7 @@ input,
 button,
 select,
 textarea {
-  color: #fff;
+  /*color: #fff;*/
   font-size: 16px;
   font-weight: normal;
   line-height: normal;
@@ -6633,6 +6633,27 @@ box-shadow: 0 0 5px rgba(255,255,255,0.05);
 -ms-box-sizing: border-box;
 box-sizing: border-box;
 overflow: auto;
+clear: both;
+}
+
+.wellbgcharts{
+padding: 10px 20px 0px 20px;
+margin-bottom: 30px;
+background-color: #222;
+background-color: rgba(0,0,0,0.15);
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+border-color: #1d1d1d;
+border: 2px solid rgba(0,0,0,0.15);
+-webkit-box-shadow: 0 0 5px rgba(255,255,255,0.05);
+-moz-box-shadow: 0 0 5px rgba(255,255,255,0.05);
+box-shadow: 0 0 5px rgba(255,255,255,0.05);
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+/*overflow: auto;*/
 clear: both;
 }
 	
